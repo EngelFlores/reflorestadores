@@ -1,0 +1,38 @@
+@import '../base/all'
+@import '../components/all'
+@import '../layout/all'
+
+.destaques
+  background-image: linear-gradient(180deg, rgba(5,98,51,0.84) 35%, rgba(255,255,255,0) 100%), url('/_images/destaques/floresta.jpg')
+  display: flex
+  background-size: cover
+  flex-direction: column
+  justify-content: center
+  width: 100vw
+  height: 656px
+  .texto-destaques
+    text-align: center
+  .titulo-destaques
+    font-size: 100px
+    color: #FFFFFF
+    font-style: italic
+
+.noticias
+  .row
+    .card
+      .card-body
+        .btn-success
+          border-radius: 20px
+          font-size: 12px
+          font-weight: bold
+          margin-bottom: -50px
+
+@media (max-width: 550px)
+  .destaques
+    .titulo-destaques
+      font-size: 75px
+
+@media (max-width: 425px)
+  .destaques
+    .titulo-destaques
+      font-size: 50px

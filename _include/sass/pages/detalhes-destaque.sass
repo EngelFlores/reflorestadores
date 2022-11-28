@@ -1,0 +1,86 @@
+@import '../base/all'
+@import '../components/all'
+@import '../layout/all'
+
+.destaques
+  background-image: linear-gradient(180deg, rgba(5,98,51,0.84) 35%, rgba(255,255,255,0) 100%), url('/_images/destaques/floresta.jpg')
+  display: flex
+  background-size: cover
+  flex-direction: column
+  justify-content: center
+  width: 100vw
+  height: 656px
+  .texto-destaques
+    text-align: center
+  .titulo-destaques
+    font-size: 100px
+    color: #FFFFFF
+    font-style: italic
+
+.data
+  padding: 60px 10%
+  font-size: 16px
+
+.modal
+  .modal-dialog
+    margin-top: 100px
+    .modal-body
+      padding: 0
+      .legenda
+        margin: 10px
+        font-size: 16px
+        color: #00622C
+      .modal-foto
+        border-top-left-radius: 7px
+        border-top-right-radius: 7px
+
+.noticia
+  padding: 0px 10%
+  .titulo
+    font-size: 50px
+    font-weight: bold
+    color: #00622C
+    text-align: center
+    padding-bottom: 65px
+  .subtitulo
+    font-size: 25px
+    font-weight: bold
+    color: #00622C
+    padding-bottom: 45px
+  p
+    font-size: 16px
+    color: #181818
+    padding-bottom: 25px
+
+.fotos
+  padding: 80px 15%
+  .card
+    width: 270px
+    margin: 0 20px
+
+.download
+  .btn
+    border-radius: 30px
+    font-size: 18px
+    padding: 17px 70px
+    margin-bottom: 180px
+
+@media (max-width: 550px)
+  .destaques
+    .titulo-destaques
+      font-size: 75px
+
+@media (max-width: 425px)
+  .destaques
+    .titulo-destaques
+      font-size: 50px
+  .data
+    flex-direction: column
+  .noticia
+    .titulo
+      font-size: 30px
+  .fotos
+    flex-direction: column
+    padding: 10px
+    .card
+      margin-bottom: 10px

@@ -1,0 +1,45 @@
+.header
+  position: fixed
+  width: 100%
+  padding: 10px
+  z-index: 9999
+  .mobile-menu
+      display: none
+  .logo
+  .header-links a
+    color: $color-black-grey-text
+    font-weight: bold
+    letter-spacing: 1.6px
+  .header-links a
+    @include fonte-textos(16px, #fff)
+  .icone
+    color: #FFFFFF
+    padding-right: 25px
+
+  .mobile-menu
+    .card
+      background: #888b89
+      width: calc( 100vw - 20px )
+      .icone
+        padding-top: 15px
+      .lista
+        flex-direction: column
+        li
+          padding-top: 15px
+
+
+@media (max-width: 1275px)
+  .header
+    .col-6
+      width: 100%
+      padding: 20px
+@media (max-width: 740px)
+  .header
+    .web-menu
+      display: none
+    .mobile-menu
+      display: block
+      position: fixed
+    
+
+  

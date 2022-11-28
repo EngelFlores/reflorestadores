@@ -1,0 +1,221 @@
+@import '../base/all'
+@import '../components/all'
+@import '../layout/all'
+
+.slider
+  .slick-dots
+    position: relative
+    margin-top: 10px
+  .slick-dots li button:before
+    color: white
+    opacity: 1
+    font-size: 12px
+  .img1, .img2, .img3
+    background: url('/_images/home/banner.jpg') no-repeat
+    background-size: cover
+  .container-texto
+    display: flex
+    flex-direction: column
+    justify-content: center
+    width: 100vw
+    height: 100vh
+  .texto-home, .titulo-home, .subtitulo-home, .pontos
+    padding-left: 15%
+  .texto-home
+    color: #FFFFFF
+    font-size: 18px
+    max-width: 55%
+  .titulo-home
+    font-size: 70px
+    color: #FFFFFF
+    font-style: italic
+  .subtitulo-home
+    font-family: $extra-font-family
+    font-size: 171px
+    color: #C3CEC7
+
+.blocos
+  .bloco-lateral
+    width: max-content
+    height: max-content
+    padding: 40px
+    background: #E3E3E3
+    margin: 0
+    margin-top: -80px
+    z-index: 1
+    img
+      width: 70px
+      height: 90px
+    .texto
+      flex-direction: column
+      color: #056233
+      padding-left: 40px
+      justify-content: center
+      .titulo
+        font-size: 18px
+        font-weight: bold
+      .paragrafo
+        font-size: 14px
+  .bloco-central
+    padding: 0
+    margin-top: -140px
+
+.bloco-video
+  .modal-dialog
+    max-width: 70%
+    .modal-body
+      padding: 0
+      .video-sobre
+        width: 100%
+
+.noticias
+  background: url('/_images/home/destaques/arvore.png') no-repeat
+  .noticias-titulo
+    font-size: 40px
+    color: #00622C
+    font-weight: bold
+    padding-top: 60px
+  .btn
+    border-radius: 30px
+    font-size: 16px
+    padding: 15px
+    margin-bottom: 100px
+
+.foto
+  padding: 0
+  img
+    width: 100%
+    height: auto
+
+.sobre-nos
+  padding: 50px
+  .titulo
+    font-size: 40px
+    font-weight: bold
+    color: #00622C
+    padding-bottom: 30px
+  .subtitulo
+    font-size: 32px
+    color: #5C5C5C
+    padding-bottom: 30px
+    span
+      font-family: $extra-font-family
+      font-size: 82px
+      color: #056233
+  .paragrafo
+    font-size: 20px
+    color: #5C5C5C
+    line-height: 200%
+  .btn
+    border-radius: 30px
+    font-size: 16px
+    padding: 15px
+    margin-bottom: 100px
+    margin-top: 100px
+
+.area-protegida
+  background: #F1F1F1
+  text-align: center
+  margin-top: 250px
+  height: 450px
+  .informacao
+    margin-top: 100px
+  .arvores
+    margin-left: -50%
+    margin-top: -165px
+
+.linha-produtos
+  .linha-titulo
+    font-size: 40px
+    color: #00622C
+    font-weight: bold
+    padding: 50px
+  .scroll
+    overflow-x: scroll
+    overflow-y: hidden
+    width: 1300px
+    .row
+      flex-wrap: initial
+    .card
+      width: 360px
+      -webkit-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.4)
+      -moz-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.4)
+      box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.4)
+      .card-body
+        .card-title
+          color: #056233
+          font-size: 25px
+          font-weight: bold
+          padding: 20px 0
+        .card-text
+          font-size: 16px
+          color: #000000
+          padding-bottom: 10px
+        .btn
+          background: #275E34
+          border-radius: 30px
+          padding: 15px 25px
+
+@media (max-width: 1400px)
+  .blocos
+    .bloco-lateral
+      padding: 10px
+
+@media (min-width: 1200px)
+  .area-protegida
+    .informacao
+    .arvores
+      margin-left: -30%
+
+@media (max-width: 1199px)
+  .area-protegida
+    height: auto
+    .row
+      flex-direction: column
+      .informacao
+        margin-top: 0
+        img
+          width: 100%
+      .arvores
+        margin-left: 0
+        margin-top: 0
+        img
+          width: 100%
+
+@media (max-width: 995px)
+  .blocos
+    .row
+      flex-direction: column
+      .bloco-central, .bloco-lateral
+        margin-top: 0
+        width: 100%
+  .slider
+    .texto-home
+      max-width: 90%
+
+@media (max-width: 768px)
+  .slider
+    .titulo-home
+      font-size: 45px
+    .subtitulo-home
+      font-size: 111px
+
+@media (max-width: 768px)
+  .slider
+    .titulo-home
+      font-size: 30px
+    .subtitulo-home
+      font-size: 91px
+
+@media (max-width: 425px)
+  .linha-produtos
+    .scroll
+      .row
+      .card
+        width: 300px
+  
+  .slider
+    .titulo-home
+      font-size: 20px
+    .subtitulo-home
+      font-size: 61px

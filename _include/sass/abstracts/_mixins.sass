@@ -1,0 +1,20 @@
+@mixin fonte-textos($size, $color)
+  font-size: $size
+  color: $color
+
+@mixin respond-to($media)
+
+  @if $media==extra-small
+    // < 576px
+    @media only screen and (max-width: $break-small - 1)
+      @content
+
+  @if $media==menor768
+    // < 576px
+    @media only screen and (max-width: $break-medium - 1)
+      @content
+
+  @else if $media==menor992
+    // <= 992px
+    @media only screen and (max-width: $break-large - 1)
+      @content

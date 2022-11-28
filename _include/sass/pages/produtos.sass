@@ -1,0 +1,239 @@
+@import '../base/all'
+@import '../components/all'
+@import '../layout/all'
+
+.produtos
+  background-image: url('/_images/produtos/banner.jpg')
+  display: flex
+  background-size: cover
+  flex-direction: column
+  justify-content: center
+  width: 100vw
+  height: 656px
+  .texto-produtos
+    text-align: center
+  .titulo-produtos
+    font-size: 100px
+    color: #FFFFFF
+    font-style: italic
+
+.linha
+  height: 2px
+  width: 45%
+  background: #00622C
+  display: inline-block
+
+.industria
+  .row
+    padding-top: 80px
+    padding-bottom: 145px
+    .primeira-coluna
+      .titulo
+        font-size: 40px
+        color: #5C5C5C
+        font-weight: 600
+        display: inline
+      .subtitulo
+        font-family: $extra-font-family
+        font-size: 100px
+        color: #00622C
+        margin-top: -20px
+        padding-bottom: 20px
+        margin-left: 28%
+      .paragrafo
+        margin-left: 28%
+        text-align: start
+        padding-bottom: 20px
+        line-height: 200%
+        font-size: 21px
+      .btn
+        margin-left: 28%
+        border-radius: 30px
+        padding: 20px 45px
+      .lista
+        text-align: start
+        margin-left: 28%
+        line-height: 200%
+        font-weight: 600
+        font-size: 21px
+        padding-bottom: 30px
+    .segunda-coluna
+      background: url('/_images/produtos/industria/fundo.png') no-repeat
+      background-position: right
+      background-size: contain
+      .informacoes
+        background: rgba(191, 210, 198, 1)
+        border-radius: 23px
+        padding: 60px
+        width: max-content
+        font-size: 25px
+        margin-left: 10%
+        height: max-content
+        color: #275E34
+        .titulo
+          font-weight: bold
+        .subtitulo
+          padding-bottom: 10px
+
+.biomassa
+  margin-bottom: 100px
+  .row
+    background: #F7F7F7
+    padding: 50px 10px
+    .primeira-coluna
+      text-align: end
+      img
+        margin-bottom: -150px
+        height: 600px
+        margin-right: -150px
+    .segunda-coluna
+      .container-titulo
+        display: flex
+        justify-content: end
+        align-items: center
+      .titulo
+        font-size: 40px
+        color: #5C5C5C
+        font-weight: 600
+        display: inline
+        padding-right: 20px
+      .subtitulo
+        font-family: $extra-font-family
+        font-size: 100px
+        color: #00622C
+        margin-top: -20px
+        padding-bottom: 20px
+      .lista
+        padding-left: 20%
+        line-height: 200%
+      .btn
+        margin-left: 28%
+        border-radius: 30px
+        padding: 20px 45px
+        margin-top: 50px
+        margin-bottom: 20px
+
+.florestais
+  .row
+    padding-top: 80px
+    padding-bottom: 145px
+    .primeira-coluna
+      .titulo
+        font-size: 40px
+        color: #5C5C5C
+        font-weight: 600
+        display: inline
+      .subtitulo
+        font-family: $extra-font-family
+        font-size: 100px
+        color: #00622C
+        margin-top: -20px
+        padding-bottom: 20px
+        margin-left: 28%
+      .paragrafo
+        margin-left: 28%
+        text-align: start
+        padding-bottom: 20px
+        line-height: 200%
+        font-size: 21px
+      .negrito
+        margin-left: 28%
+        text-align: start
+        line-height: 200%
+        font-size: 21px
+        font-weight: bold
+        color: #5C5C5C
+      .btn
+        margin-left: 28%
+        border-radius: 30px
+        padding: 20px 45px
+        margin-top: 30px
+    .segunda-coluna
+      background: url('/_images/produtos/florestais/fundo.png') no-repeat
+      background-position: right
+      background-size: contain
+
+.materia-prima
+  .row
+    background: #F7F7F7
+    padding: 50px 10px
+    .primeira-coluna
+      img
+        margin-top: -150px
+        margin-right: -150px
+    .segunda-coluna
+      .paragrafo
+        margin-right: 10%
+        text-align: start
+        padding-bottom: 20px
+        line-height: 200%
+        font-size: 21px
+      .container-titulo
+        display: flex
+        justify-content: end
+        align-items: center
+      .titulo
+        font-size: 40px
+        color: #5C5C5C
+        font-weight: 600
+        display: inline
+        padding-right: 20px
+      .subtitulo
+        font-family: $extra-font-family
+        font-size: 100px
+        color: #00622C
+        margin-top: -20px
+        padding-bottom: 20px
+      .lista
+        padding-left: 20%
+        line-height: 200%
+      .btn
+        border-radius: 30px
+        padding: 20px 45px
+        margin-top: 50px
+        margin-bottom: 20px
+
+@media (max-width: 1000px)
+  .produtos
+    .titulo-produtos
+      font-size: 50px
+  .industria
+    .row
+      flex-direction: column
+      .primeira-coluna
+        .subtitulo, .paragrafo, .lista, .btn
+          margin-left: 0
+      .segunda-coluna
+        justify-content: center
+        .informacoes
+          margin-left: 0
+          margin-top: 20px
+  .biomassa
+    .row
+      flex-direction: column
+      .primeira-coluna
+        text-align: center
+        img
+          height: 300px
+          margin: 0
+      .segunda-coluna
+        .btn
+          margin-left: 0
+
+  .florestais
+    .row
+      flex-direction: column
+      .primeira-coluna
+        .paragrafo, .negrito, .btn
+          margin-left: 0
+      .segunda-coluna
+        margin-top: 30px
+
+  .materia-prima
+    .row
+      flex-direction: column
+      .primeira-coluna
+        img
+          margin: 0
+    .col-7
+      width: 100%
